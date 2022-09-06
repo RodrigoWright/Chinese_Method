@@ -1,6 +1,6 @@
 package src.app;
 
-import src.Model.Function;
+import src.model.Function;
 
 public class App {
     public static void main (String[] args){

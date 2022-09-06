@@ -1,4 +1,4 @@
-package src.Model;
+package src.model;
 
 public class Function {
     public void hello(){
