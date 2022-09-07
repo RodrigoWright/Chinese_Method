@@ -1,6 +1,6 @@
 package src.model;
 
-public class Function {
+public class equacaoResto {
     public void hello(){
         System.out.println("Hello World!");
     }

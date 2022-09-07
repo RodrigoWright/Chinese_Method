@@ -1,11 +1,10 @@
 package src.app;
 
-import src.model.Function;
+import src.model.equacaoResto;
 
 public class App {
     public static void main (String[] args){
-        System.out.println("Bem vindos!");
-        Function f = new Function();
-        f.hello();
+        System.out.println("Hello World!");
+        equacaoResto[] equacao = new equacaoResto[10];
     }
 }
