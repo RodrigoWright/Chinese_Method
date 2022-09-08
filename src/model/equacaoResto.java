@@ -1,10 +1,10 @@
 package src.model;
 
 public class equacaoResto {
-    private int a = 0;
-    private int b = 0;
-    private int n = 0;
-    private int x = 0;
+    private int a = -1;
+    private int b = -1;
+    private int n = -1;
+    private int x = -1;
 
     public int getA(){
         return a;
