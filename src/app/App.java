@@ -27,6 +27,8 @@ public class App {
         validateMDCN(equacao);
         validateMDCan(equacao);
 
+        equacao = setX(equacao);
+
     }
     private static int getIntInput (String message){
         int x;
@@ -99,4 +101,15 @@ public class App {
             }
         }
     }
+    public static List<equacaoResto> setX(List<equacaoResto> objectList) {
+        int i = 0;
+        for (equacaoResto tmp : objectList){
+            tmp.setX();
+            objectList.set(i, tmp);
+            System.out.println(tmp.getX());
+            i++;
+        }
+        return objectList;
+    }
+    
 }
