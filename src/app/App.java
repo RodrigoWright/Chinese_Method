@@ -12,7 +12,8 @@ import src.model.equacaoResto;
 public class App {
     public static void main (String[] args){       
         List<equacaoResto> equacao = new ArrayList<equacaoResto>();
-        int K = getIntInput("Quantas equações deseja inserir?");      
+        int K = getIntInput("Quantas equações deseja inserir?");  
+        int N = 1;    
 
         for (int i = 0; i < K; i++){
             equacaoResto tmp = new equacaoResto();
@@ -28,6 +29,10 @@ public class App {
         validateMDCan(equacao);
 
         equacao = setX(equacao);
+
+        for (equacaoResto tmp : equacao){
+            N = 1 * tmp.getn();
+        }
 
     }
     private static int getIntInput (String message){
