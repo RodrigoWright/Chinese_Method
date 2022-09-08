@@ -8,7 +8,8 @@ Para contribuir, só criar uma nova branch com o nome da issue que você vai tra
 - [java](https://www.java.com/pt-BR)
 ### Run executable
 To run, download the ChineseMethod.jar file and run it.
-console:
+
+Console:
 ```bash
 java -jar ChineseMethod.jar
 ```
