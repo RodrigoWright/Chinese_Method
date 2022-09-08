@@ -11,7 +11,7 @@ public class equacaoResto {
     public int getB(){
         return b;
     }
-    public int getN(){
+    public int getn(){
         return n;
     }
     public void setValues(int x, int y, int z){
