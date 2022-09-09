@@ -1,3 +1,11 @@
+// Felipe Nunes de Mello- 202023627 
+
+// Gabriel Marques de Souza - 202016266
+
+// Rodrigo Edmar Wright Dos Santos - 200027158
+
+// Linguagem: Java
+
 # Chinese_Method
 -------------------------
 Programa feito para calcular o sistema chinês de restos.
