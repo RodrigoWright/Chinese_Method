@@ -5,6 +5,8 @@ public class equacaoResto {
     private int b = -1;
     private int n = -1;
     private int x = -1;
+    private int Ni = -1;
+    private int oNi = -1;
 
     public int getA(){
         return a;
@@ -17,6 +19,18 @@ public class equacaoResto {
     }
     public int getX(){
         return x;
+    }
+    public int getNi(){
+        return Ni;
+    }
+    public int getoNi(){
+        return oNi;
+    }
+    public void setNi(int N){
+        Ni = N/n;
+    }
+    public void setoNi(){
+        oNi = Ni % n;
     }
     public void setX(){
         boolean valid = false;
