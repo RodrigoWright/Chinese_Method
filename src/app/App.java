@@ -30,12 +30,16 @@ public class App {
         validateMDCan(equacao);
 
         equacao = setX(equacao);
+        // for (equacaoResto tmp : equacao){
+        //     System.out.println("N: " + tmp.getNi());
+        //     System.out.println("oNi: " + tmp.getoNi());
+        // }
 
         for (equacaoResto tmp : equacao){
-            N *= tmp.getn();           
-            equacao = setNi(equacao, N);
-            equacao = setoNi(equacao);
+            N *= tmp.getn();                      
         }
+
+        equacao = setNs(equacao, N);
 
         for (equacaoResto tmp : equacao){
             System.out.println("N: " + tmp.getNi());
@@ -140,26 +144,28 @@ public class App {
         return objectList;
     }
 
-    public static List<equacaoResto> setNi(List<equacaoResto> objectList, int N) {
+    public static List<equacaoResto> setNs(List<equacaoResto> objectList, int N) {
         int i = 0;
         for (equacaoResto tmp : objectList){
             tmp.setNi(N);
+            tmp.setoNi();
             objectList.set(i, tmp);
-            // System.out.println("N" + i + ": " + tmp.getNi());
+            System.out.println("N" + i + ": " + tmp.getNi());
+            System.out.println("oN" + i + ": " + tmp.getoNi());
             i++;
         }
         return objectList;
     }
 
-    public static List<equacaoResto> setoNi(List<equacaoResto> objectList) {
-        int i = 0;
-        for (equacaoResto tmp : objectList){
-            tmp.setoNi();
-            objectList.set(i, tmp);
-            // System.out.println("oN" + i + ": " + tmp.getoNi());
-            i++;
-        }
-        return objectList;
-    }
+    // public static List<equacaoResto> setoNi(List<equacaoResto> objectList) {
+    //     int i = 0;
+    //     for (equacaoResto tmp : objectList){
+            
+    //         objectList.set(i, tmp);
+    //         // System.out.println("oN" + i + ": " + tmp.getoNi());
+    //         i++;
+    //     }
+    //     return objectList;
+    // }
     
 }

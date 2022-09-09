@@ -30,8 +30,23 @@ public class equacaoResto {
         Ni = N/n;
     }
     public void setoNi(){
-        oNi = Ni % n;
-    }
+        int tmp = Ni % n;
+        System.out.println((Ni + " ; " + tmp + " ; " + a));
+        boolean valid = false;
+        if (tmp % n == tmp){                
+            for (int i = 1; valid == false; i++){
+                int tmp2 = tmp * i;
+                if (1 == (tmp2 % n)){                
+                    oNi = i;
+                    valid = true;
+                    return;
+                }
+                // System.out.println((a % n + " ; " + tmp + " ; " + a));
+            }
+        } 
+        
+             
+    };
     public void setX(){
         boolean valid = false;
         if (a == b){
@@ -48,7 +63,7 @@ public class equacaoResto {
                 valid = true;
                 return;
             }
-        };
+        }
     }
     public void setValues(int x, int y, int z){
         a = x;
